@@ -1,0 +1,40 @@
+<div>
+    <button class="button" (click)="goToMovies()">Back</button>
+</div>
+
+<span>
+    <h3>{{movie?.title}}</h3>
+</span><br>
+<div class="maindiv">
+    <img class="image" src="{{movie?.poster}}" alt="">
+    <span class="summary"><b>Summary:</b> {{movie?.summary}}</span>
+</div>
+<div class="details">
+    <div class="detailsCard">
+        <h3 class="header">Details</h3>
+        <div class="boxBorders">
+            <b class="detailsMargin"> Box office: </b>
+            <span class="leftMargin">${{ movie?.box_office}}million</span>
+        </div>
+        <br>
+        <div class="boxBorders"> 
+            <b class="detailsMargin">Budget: </b>
+            <span class="leftMargin">${{ movie?.budget}}million</span>
+        </div>
+        <br>
+        <div class="boxBorders">
+            <b class="detailsMargin"> Duration: </b>
+            <span class="leftMargin">{{ movie?.duration | duration}}</span>
+        </div>
+        <br>
+        <div class="boxBorders">
+            <b class="detailsMargin">Producers: </b>
+            <span class="leftMargin">{{ movie?.producers}}</span>
+        </div>
+        <br>
+        <div class="boxBorders">
+            <b >Cinematographers: </b>
+            <span class="leftMargin">{{ movie?.cinematographers}}</span>
+        </div>
+    </div>
+</div>

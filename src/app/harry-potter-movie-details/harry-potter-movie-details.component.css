@@ -1,0 +1,43 @@
+.details{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.header{
+    margin-left: 30%;
+}
+
+.leftMargin{
+    margin-left: 15px;
+}
+
+.image{
+    width: 9rem;
+    height: 9rem;
+}
+
+.summary{
+    width: 90%;
+    flex: 2;
+}
+
+.maindiv{
+    width: 100%;
+    display: flex;
+}
+.detailsCard{
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+.boxBorders{
+    border-top: 1px solid #ccc;
+}
+
+.detailsMargin{
+    width: 30%;
+}
+
+.button{
+    background-color:rgb(71, 71, 71);
+}

@@ -1,0 +1,25 @@
+<div>
+    <b>Filters:</b>
+    <br>
+    <span>Title</span>
+    <input type="text" [(ngModel)]="titleValue">
+    <span>Release year</span>
+    <input type="text" [(ngModel)]="yearvalue">
+</div>
+
+<div class="details">
+    <div *ngFor="let item of filteredMoviesList">
+        <li class="list">
+            <div class="title">
+                <span><b>{{item.title}}</b></span>
+                <br>
+                <div class=" ">
+                    <span class="fontSize">Release Date: {{ item.release_date}} </span>
+                    <span class="leftMargin fontSize">Budget: ${{ item.budget}}million</span>
+                    <span class="leftMargin fontSize">Duration: {{ item.duration | duration}}</span>
+                    <button class="buttonMargin fontSize" (click)="goToDetails(item.id)">Details</button>
+                </div>
+            </div>
+        </li>
+    </div>
+</div>

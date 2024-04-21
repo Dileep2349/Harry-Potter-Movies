@@ -1,0 +1,34 @@
+.detailsEnd{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.mainCard{
+    width: 70%;
+}
+
+.details{
+margin-top: 30px;
+border-top: 1px;
+width: 55%;
+}
+
+.leftMargin{
+    margin-left: 15px;
+}
+.buttonMargin{
+    margin-left: 15rem;
+    background-color:rgb(71, 71, 71);
+}
+
+.title{
+    margin-top: 10px;
+}
+
+.fontSize{
+    font-size: 0.8rem;
+}
+
+.list{
+    border: 1px solid #ccc;
+}
